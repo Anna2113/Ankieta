@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+
+    <title>Ankieta podróżnicza</title>
+</head>
+<body>
+<div class="container-fluid" id="tytulankiety">
+    <header>
+        <h1>Ankieta podróżnika</h1>
+        <p>Opowiedz nam o swoich podróżach</p>
+    </header>
+</div>
+<div class="container">
+    <form>
+        <div class=" row mt-4">
+            <div class="col-sm-5 offset-1">
+                <label class="sr-only">Imie</label>
+                <input type="text" class="form-control" placeholder="Imie" required>
+            </div>
+            <div class="form-group col-sm-5">
+                <label class="sr-only">E-mail</label>
+                <input type="email" class="form-control" placeholder="Adres email" required>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="form-check-inline offset-2">
+                <input class="form-check-input" type="radio" name="gender" id="radioGenderKobieta" value="Kobieta">
+                <label class="form=check-label" for="radioGenderKobieta">Kobieta</label>
+            </div>
+            <div class="form-check-inline offset-1">
+                <input class="form-check-input" type="radio" name="gender" id="radioGenderMezczyzna" value="Mezczyzna">
+                <label class="form-check-label" for="radioGenderMezczyzna">Mężczyzna</label>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="form-group col-sm-5 offset-1">
+                <label class="sr-only">Wiek:</label>
+                <input type="number" min="12" max="105" placeholder="Wiek:" class="form-control" required>
+            </div>
+            <div class="form-group col-sm-5">
+                <label class="sr-only">Kraj zamieszkania</label>
+                <select class="form-control">
+                    <option>Polska</option>
+                    <option>USA</option>
+                    <option>Wielka Brytania</option>
+                    <option>Włochy</option>
+                    <option>Austria</option>
+                    <option>Szwajcaria</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class=" form-group col-sm-10 offset-1">
+                <label>Jaki środek transportu towarzyszy Ci najczęściej ?</label></br>
+                <div class="form-check-inline offset-1">
+                    <input class="form-check-input" type="radio" name="pojazd" id="radioPojazdSam" value="Sam">
+                    <label class="form-check-label" for="radioPojazdSam">Samochodem</label>
+                </div>
+                <div class="form-check-inline ml-3 ">
+                    <input class="form-check-input" type="radio" name="pojazd" id="radioPojazdS" value="S">
+                    <label class="form-check-label" for="radioPojazdS">Samolotem</label>
+                </div>
+                <div class="form-check-inline ml-3">
+                    <input class="form-check-input" type="radio" name="pjazd" id="radioPojazdR" value="R">
+                    <label class="form-check-label" for="radioPojazdR">Rowerem</label>
+                </div>
+                <div class="form-check-inline ml-3">
+                    <input class="form-check-input" type="radio" name="pojazd" id="radioPojazdP" value="P">
+                    <label class="form-check-label" for="radioPojazdP">Pieszo</label>
+                </div>
+                <div class="form-check-inline ml-3">
+                    <input class="form-check-input" type="radio" name="pojazd" id="radioPojazdA" value="A">
+                    <label class="form-check-label" for="radioPojazdA">Autostopem</label>
+                </div>
+                <div class="form-check-inline ml-3">
+                    <input class="form-check-input" type="radio" name="pojazd" id="radioPojazdK" value="K">
+                    <label class="form-check-label" for="radioPojazdK">Konno</label>
+                </div>
+                <div class="form-check-inline ml-3">
+                    <input class="form-check-input" type="radio" name="pojazd" id="radioPojazdŁ" value="Ł">
+                    <label class="form-check-label" for="radioPojazdŁ">Łodzią</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class=" col-sm-5 offset-1">
+                <label>W jaki sposób podróżujesz</label>
+                <select class="form-control">
+                    <option>Podróżuję sam</option>
+                    <option>Podróżuję z rodziną</option>
+                    <option>Podróżuję z paczką przyjaciół</option>
+                    <option>Podróżuję z ludzmi poznanymi przez Internet</option>
+                    <option>Nie podróżuję</option>
+                </select>
+            </div>
+            <div class="col-sm-5">
+                <label >Liczba odwiedzonych przez Ciebie krai:</label>
+                <input type="number" class="form-control "min="0" max="300" step="10" placeholder="Liczba: ">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm-10 offset-1">
+                <label>Opisz swoje ulubione miejsce</label>
+                <textarea name="opis" id="opisMiejsca" cols="100" rows="10" required></textarea>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class=" form-group col-sm-10 offset-1">
+                <label>Wybierz jedną formę atrakcji:</label>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="atrakcja" id="radioAtrakcjaL" value="L">
+                    <label class="form-check-label" for="radioAtrakcjaL">Lot balonem</label>
+                </div>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="atrakcja" id="radioAtrakcjaN" value="N">
+                    <label class="form-check-label" for="radioAtrakcjaN">Nurkowanie z delfinami</label>
+                </div>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="atrakcja" id="radioAtrakcjaS" value="S">
+                    <label class="form-check-label" for="radioAtrakcjaS">Skok na bungee</label>
+                </div>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="atrakcja" id="radioAtrakcjaSp" value="Sp">
+                    <label class="form-check-label" for="radioAtrakcjaSp">Sprint ze strusiem</label>
+                </div>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="atrakcja" id="radioAtrakcjaNo" value="No">
+                    <label class="form-check-label" for="radioAtrakcjaNo">Noc pod gwiazdami</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="form-group col-sm-10 offset-1">
+                <label>Czego chciałbyś/chciałabyś nauczyć się podczas najbliższej podróży ?</label></br>
+                <div class="form-chcek offset-1">
+                    <input class="form-check-input" type="checkbox" name="umiejetnosc" id="checkboxUmiejetnoscG" value="G">
+                    <label class="form-check-label" for="checkboxUmiejetnoscG">Gotowania</label>
+                </div>
+                <div class="form-chcek offset-1">
+                    <input class="form-check-input" type="checkbox" name="umiejetnosc" id="checkboxUmiejetnoscSur" value="Sur">
+                    <label class="form-check-label" for="checkboxUmiejetnoscSur">Surfingu</label>
+                </div>
+                <div class="form-chcek offset-1">
+                    <input class="form-check-input" type="checkbox" name="umiejetnosc" id="checkboxUmiejetnoscMi" value="Mi">
+                    <label class="form-check-label" for="checkboxUmiejetnoscMi">Języka migowego</label>
+                </div>
+                <div class="form-chcek offset-1">
+                    <input class="form-check-input" type="checkbox" name="umiejetnosc" id="checkboxUmiejetnoscSnow" value="Snow">
+                    <label class="form-check-label" for="checkboxUmiejetnoscSnow">Jazdy na Snowboardzie</label>
+                </div>
+                <div class="form-chcek offset-1">
+                    <input class="form-check-input" type="checkbox" name="umiejetnosc" id="checkboxUmiejetnoscPł" value="Pł">
+                    <label class="form-check-label" for="checkboxUmiejetnoscPł">Pływania</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class=" form-group col-sm-10 offset-1">
+                <label>Bez czego byś napewno nie pojechał/pojechała w nieznaną podróż ?</label></br>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="rzecz" id="radioRzeczLat" value="Lat">
+                    <label class="form-check-label" for="radioRzeczLat">Latarka</label>
+                </div>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="rzecz" id="radioRzeczButy" value="Buty">
+                    <label class="form-check-label"  for="radioRzeczButy">Zapasowe buty</label>
+                </div>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="rzecz" id="radioRzeczTel" value="Tel">
+                    <label class="form-check-label"  for="radioRzeczTel">Telefon</label>
+                </div>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="rzecz" id="radioRzeczMap" value="Map">
+                    <label class="form-check-label"  for="radioRzeczMap">Mapa</label>
+                </div>
+                <div class="form-check offset-1">
+                    <input class="form-check-input" type="radio" name="rzecz" id="radioRzeczKsi" value="Ksi">
+                    <label class="form-check-label"  for="radioRzeczKsi">Dobra książka</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-sm-5 offset-1">
+            <label>Co jest twoim głównym celem podróży</label>
+            <div class="form-group col-sm-10">
+                <select class="form-control">
+                    <option>Fotografia</option>
+                    <option>Sport</option>
+                    <option>Poznawanie nowych ludzi</option>
+                    <option>Poznawanie nowych kultur</option>
+                    <option>Jazda szybkimi samochodami</option>
+                    <option>Poznawanie nowych dźwięków muzyki</option>
+                    <option>Poznawanie nowych języków</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="form-group form-check col-sm-10 offset-1">
+                <label>Opowiedz nam o ciekawej historii, która Ci się przydarzyła</label>
+                <textarea name="opis" id="opisHistorii" cols="100" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="form-group form-check offset-1">
+                <input type="checkbox" class="form-check-input" required>
+                <label class="form-check-label">Potwierdzam zapoznanie z regulaminem</label>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="offset-1">
+                <button type="submit" class="btn btn-mybutton">Wyślij</button>
+            </div>
+        </div>
+        </br> </br> </br>
+
+    </form>
+
+</div>
+
+</body>
+</html>
