@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(243, 243, 167);
+}
+header{
+    background-color: rgb(187, 184, 184);
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.btn-mybutton{
+    background-color: rgb(187, 184, 184);
+    color: black;
+}
