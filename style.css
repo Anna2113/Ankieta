@@ -1,17 +1,55 @@
-body{
+html,body{
     background-color: rgb(243, 243, 167);
+    height: 100%;
+    margin:0;
+    padding:0;
 }
 header{
     background-color: rgb(187, 184, 184);
     text-align: center;
     margin-top: 20px;
     border-radius: 5px;
+
+}
+#container {
+    min-height:100%;
+    position:relative;
 }
 .btn-mybutton{
     background-color: rgb(187, 184, 184);
     color: black;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.center{
+    text-align: center;
+}
+.btn-secondmybutton{
+    background-color: rgb(187, 184, 184);
+    color: black;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
 }
 #stopka{
     background-color: rgb(187, 184, 184);
     text-align: center;
+    height:40px;
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
+
+#opisHistorii{
+    border-radius: 5px;
+}
+#opisMiejsca{
+    border-radius:5px;
+}
+
+
+
+
+
